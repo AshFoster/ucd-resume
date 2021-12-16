@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="row">
+        <div class="row no-gutters">
             <a class="col-md-4 logo" href="index.html"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
@@ -195,6 +195,19 @@
             </div>
         </div>
     </footer>
-</body>
 
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClJO8THqxTPGvgz_pMorE4SDnNO1E4fNg&callback=initMap"></script>
+</body>
 </html>
